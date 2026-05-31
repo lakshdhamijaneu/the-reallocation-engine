@@ -1,78 +1,46 @@
-<!--
-    99-back-matter.md
-    BACK MATTER — everything that appears after the final chapter.
-
-    Sections in order:
-      1. Acknowledgments
-      2. About the Author
-      3. Notes (by chapter, if using endnotes rather than footnotes)
-      4. References / Bibliography
-      5. Index (omit for online/free release; include for print/press)
-
-    Back matter continues the arabic page numbering from where
-    the final chapter ended. No page restart.
--->
-
 ---
 
 ## Acknowledgments
 
-<!-- Keep it short. Name the people who materially helped the book exist:
-     readers of drafts, researchers, editors, collaborators.
-     One paragraph is enough unless the debt is substantial.
-     Avoid laundry lists. -->
-
-[ACKNOWLEDGMENTS PLACEHOLDER]
+This rough draft acknowledges the readers, students, collaborators, reviewers, and AI-assisted production workflows that help turn a book from a directory of files into a usable learning object. Specific names should be added after manuscript review.
 
 ---
 
 ## About the Author
 
-<!-- Third person. 100–200 words. Credentials that are relevant to THIS book.
-     Not a full CV. End with a line about where to find you online. -->
+**Nik Bear Brown** is an Associate Teaching Professor in the College of Engineering at Northeastern University. He has taught artificial intelligence, computer science, statistics, applied mathematics, programming, visualization, web systems, game programming, and AI fluency across Northeastern, UCLA, Santa Monica College, ITT, and the Art Institutes Hollywood. His Ph.D. is in computer science from UCLA, with a major field in computational and systems biology and minor fields in artificial intelligence and statistics. He also holds a Master's in Information Design and Data Visualization and an MBA from Northeastern University.
 
-[AUTHOR BIO PLACEHOLDER]
+[nikbearbrown.com](https://www.nikbearbrown.com) · [irreducibly.xyz](https://irreducibly.xyz) · [bearbrown.co](https://www.bearbrown.co/)
 
 ---
 
 ## Notes
 
-<!-- Use this section for endnotes if you prefer them over footnotes.
-     Group by chapter. Format:
+Notes are organized by chapter in the production draft.
 
-     ### Chapter 1
+### Chapter 1
 
-     1. [Citation or explanatory note]
-     2. [Citation or explanatory note]
+- Sources to be finalized during editorial review for "Introduction".
 
-     ### Chapter 2
-     ...
+### Chapter 2
 
-     If using footnotes in-line (pandoc [^1] syntax), delete this section.
--->
+- Sources to be finalized during editorial review for "Chapter 1".
 
-[NOTES PLACEHOLDER]
 
 ---
 
 ## References
 
-<!-- Full bibliography. Alphabetical by author last name, or grouped by chapter.
-     Use a consistent citation style throughout (Chicago, APA, or a hybrid).
-
-     Example entry (Chicago author-date):
-     Pearl, Judea, and Dana Mackenzie. *The Book of Why*. Basic Books, 2018.
--->
-
-[REFERENCES PLACEHOLDER]
+A full bibliography will be compiled after fact-checking. Use a consistent citation style across the manuscript.
 
 ---
 
-## Index
+## No Index
 
-<!-- For online/free release: delete this section.
-     For print/press: compile after all other content is final.
-     Pandoc does not auto-generate an index; use dedicated indexing software
-     (e.g., indexd, Word indexing tools) or a professional indexer. -->
+This book is designed primarily for Kindle, online reading, and integration with **Medhavy** / **Medhavi**, the AI-powered intelligent textbook system. In those environments, search, links, adaptive navigation, glossary lookup, and generated study paths do more useful work than a static print index. A print index can be commissioned later if the book receives a print edition, but this draft intentionally omits one.
 
-[INDEX PLACEHOLDER — omit for online release]
+---
+
+## Glossary
+
+- **Key terms.** Definitions to be completed during final editorial pass.
