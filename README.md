@@ -262,6 +262,6 @@ The static manuscript is intended for Kindle, online reading, and integration wi
 
 ## Copyright and License
 
-Copyright © 2026 Nik Bear Brown. All rights reserved.
+Copyright © 2026 Nik Bear Brown · Bear Brown, LLC.
 
-See [LICENSE.md](LICENSE.md) for permissions and restrictions.
+This repository is dual-licensed: **code is MIT** (see [`LICENSE`](LICENSE)) and **book content is CC BY 4.0** (see [`LICENSE-BOOK-CC-BY-4.0.md`](LICENSE-BOOK-CC-BY-4.0.md)). Bundled `data/` keeps its source terms. See [LICENSE.md](LICENSE.md) for the full map.

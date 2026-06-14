@@ -39,3 +39,7 @@ __pycache__/
 /data/career-ops-main/
 data/BLS/db_30_2_mssql/
 data/BLS/db_30_2_mysql/
+
+# macOS
+.DS_Store
+**/.DS_Store

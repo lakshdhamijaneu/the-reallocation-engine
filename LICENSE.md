@@ -1,11 +1,21 @@
 # License
 
-Copyright © 2026 Nik Bear Brown. All rights reserved.
+Copyright © 2026 Nik Bear Brown · Published by Bear Brown, LLC.
 
-Published by Bear Brown, LLC.
+This repository is **dual-licensed**. Different parts carry different licenses:
 
-All rights reserved. No part of this publication may be reproduced, distributed, stored in a retrieval system, or transmitted in any form or by any means without the prior written permission of the publisher, except for brief quotations in critical reviews, classroom discussion, accessibility use, and other noncommercial uses permitted by law.
+| Part | What it is | License |
+|---|---|---|
+| **Software** | `scripts/`, `build.sh`, `graphs.sh`, `package.json`, build tooling, pipeline recipes (`recipes/`), instruction-build system | **MIT** — see [`LICENSE`](LICENSE) |
+| **Book content** | manuscript text, `chapters/`, front/back matter, `exercises/`, figures, tables, prompts, key terms, and supporting educational materials | **CC BY 4.0** — see [`LICENSE-BOOK-CC-BY-4.0.md`](LICENSE-BOOK-CC-BY-4.0.md) |
+| **Third-party data** | `data/` (SEC, BLS/O*NET, DOL/H-1B, 80 Days, etc.) | **Source terms apply** — not licensed by this project; see each source |
 
-This license covers the manuscript text, front matter, back matter, exercises, figures, tables, prompts, and supporting educational materials unless a specific file states otherwise.
+If a specific file states its own license, that file's statement governs.
 
-For permissions, course adoption, platform integration, or Medhavy / Medhavi use, contact the publisher listed above.
+**Plain-language summary:** the code is MIT (use it freely, keep the notice).
+The book is CC BY 4.0 (share, adapt, and even sell it — just credit the author).
+The bundled data belongs to its original publishers and is included under their
+terms, not relicensed here.
+
+For course adoption, platform integration, or Medhavy / Medhavi use, contact
+Bear Brown, LLC.
