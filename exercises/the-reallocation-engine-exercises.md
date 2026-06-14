@@ -146,39 +146,39 @@
 
 ---
 
-## Chapter 04: Chapter 4 — Two Customers: Writing a Skill for the AI and the Human
+## Chapter 04: Chapter 4 — Two Customers: Writing a Recipe for the AI and the Human
 *Source: `chapters/04-two-customers.md`*
 
 ## Exercises
 
 **Warm-up**
 
-1. *(Recall, easy)* Name the two customers a skill must serve and describe in one sentence what each one needs from the skill document. Why does a document that tries to serve both simultaneously tend to serve neither?
+1. *(Recall, easy)* Name the two customers a recipe must serve and describe in one sentence what each one needs from the recipe document. Why does a document that tries to serve both simultaneously tend to serve neither?
    *Tests whether you can articulate the two-customer problem before applying it.*
 
-2. *(Recall, easy)* What is the first item in the `scan` skill's read-first list, and why does the recipe specify it first rather than letting the agent decide when to load it?
+2. *(Recall, easy)* What is the first item in the `scan` recipe's read-first list, and why does the recipe specify it first rather than letting the agent decide when to load it?
    *Tests whether you understand the shared contract as a prior constraint on execution, not a reference document.*
 
-3. *(Identify, easy)* List three things the `scan` skill explicitly states it cannot verify on its own. For each one, name which other part of the engine would need to provide that information.
-   *Tests whether you've understood the scan skill's scope before extending it.*
+3. *(Identify, easy)* List three things the `scan` recipe explicitly states it cannot verify on its own. For each one, name which other part of the engine would need to provide that information.
+   *Tests whether you've understood the scan recipe's scope before extending it.*
 
 **Application**
 
-4. *(Apply, moderate)* Take any skill in the `skills/` directory other than `scan.md`. Write its human card from scratch: purpose statement, dependencies, how to run, what it produces, and at least two named failure modes. Compare your card against the skill file — what did the original file contain that you missed, and what did you name that the original file didn't?
-   *Tests the transition from understanding the two-artifact structure to producing the human artifact for a real skill.*
+4. *(Apply, moderate)* Take any recipe in the `recipes/` directory other than `scan.md`. Write its human card from scratch: purpose statement, dependencies, how to run, what it produces, and at least two named failure modes. Compare your card against the recipe file — what did the original file contain that you missed, and what did you name that the original file didn't?
+   *Tests the transition from understanding the two-artifact structure to producing the human artifact for a real recipe.*
 
-5. *(Analyze, moderate)* Run `npm run ats:scan` and then `npm run ats:verify`. Read both outputs. Write the `RUN_LOG.md` entry according to the scan skill's log template. Then write one sentence identifying whether any part of the output required LLM judgment to interpret, and if so, how that judgment is labeled.
-   *Tests the run-inspect-record loop applied to the scan skill specifically, with attention to the data/judgment boundary.*
+5. *(Analyze, moderate)* Run `npm run ats:scan` and then `npm run ats:verify`. Read both outputs. Write the `RUN_LOG.md` entry according to the scan recipe's log template. Then write one sentence identifying whether any part of the output required LLM judgment to interpret, and if so, how that judgment is labeled.
+   *Tests the run-inspect-record loop applied to the scan recipe specifically, with attention to the data/judgment boundary.*
 
 6. *(Analyze, moderate)* The chapter describes drift as a failure mode: the recipe changes and the human doc doesn't. Describe a realistic scenario in which drift would cause an incorrect run tonight. What would the incorrect run look like, and how would you detect that it was wrong? What single change to your workflow would prevent the scenario?
    *Tests adversarial reasoning about drift as a structural problem, not just a maintenance oversight.*
 
 **Synthesis**
 
-7. *(Synthesize, harder)* Design the human card for a hypothetical new skill — call it `refresh` — that re-downloads and re-verifies SEC Form D data for companies already in the pipeline. You don't have the recipe in front of you. Write the dependency list, the commands (drawing only from what `skills/_shared.md` lists as real commands), and at least three failure modes that are specific to re-downloading data that may have already been verified. Explain your reasoning for each failure mode.
+7. *(Synthesize, harder)* Design the human card for a hypothetical new recipe — call it `refresh` — that re-downloads and re-verifies SEC Form D data for companies already in the pipeline. You don't have the recipe in front of you. Write the dependency list, the commands (drawing only from what `recipes/_shared.md` lists as real commands), and at least three failure modes that are specific to re-downloading data that may have already been verified. Explain your reasoning for each failure mode.
    *Tests whether you can construct the human artifact from first principles using the shared contract as your ground.*
 
-8. *(Synthesize, harder)* The chapter argues that writing the failure-modes section of the human card is a test of the recipe. Pick one failure mode from the `scan` skill's human card above. Trace backwards from that failure mode to a gap in the recipe — a condition the recipe doesn't handle, a step it doesn't specify, a stop condition it doesn't include. Write the missing recipe element. Then explain why the failure mode, not the recipe, was easier to see first.
+8. *(Synthesize, harder)* The chapter argues that writing the failure-modes section of the human card is a test of the recipe. Pick one failure mode from the `scan` recipe's human card above. Trace backwards from that failure mode to a gap in the recipe — a condition the recipe doesn't handle, a step it doesn't specify, a stop condition it doesn't include. Write the missing recipe element. Then explain why the failure mode, not the recipe, was easier to see first.
    *Tests whether you can use the human artifact as a diagnostic tool for improving the AI artifact.*
 
 **Challenge**
@@ -501,14 +501,14 @@
 
 ---
 
-## Chapter 14: Chapter 14 — Skills: Operating the Engine
+## Chapter 14: Chapter 14 — Recipes: Operating the Engine
 *Source: `chapters/14-skills-operating-the-engine.md`*
 
 ## Exercises
 
 **Warm-up**
 
-1. *(Recall, easy)* Name the five active skills and describe in one sentence what each one does. Then name three draft/helper skills and explain what "verify before trusting" means in practice for each.
+1. *(Recall, easy)* Name the five active recipes and describe in one sentence what each one does. Then name three draft/helper recipes and explain what "verify before trusting" means in practice for each.
    *Tests whether you can articulate the active/draft distinction before applying it.*
 
 2. *(Recall, easy)* List the three steps of the run-inspect-record loop. For each step, write one sentence describing what you are confirming and why skipping that step reopens the fluency trap.
@@ -522,23 +522,23 @@
 4. *(Apply, moderate)* Run a full `scan → pipeline → oferta → verify` sequence on one real target role. Log each step in `RUN_LOG.md` with the command, key output, and provenance. Write the final recommendation with each of its four factors labeled by source type.
    *Tests the transition from understanding the sequence to executing it on live data.*
 
-5. *(Analyze, moderate)* Pick one draft or helper skill you haven't verified. Run it and inspect the output for provenance signals: did it call a script, is there an audit, can you trace any number to a record? Write your verdict — finding-grade or judgment-grade — and explain the specific evidence that drove the classification.
-   *Tests the verify-before-trusting discipline on a skill that doesn't announce its status.*
+5. *(Analyze, moderate)* Pick one draft or helper recipe you haven't verified. Run it and inspect the output for provenance signals: did it call a script, is there an audit, can you trace any number to a record? Write your verdict — finding-grade or judgment-grade — and explain the specific evidence that drove the classification.
+   *Tests the verify-before-trusting discipline on a recipe that doesn't announce its status.*
 
-6. *(Analyze, moderate)* Describe how you would detect that an active skill has drifted — stopped calling its script without announcing it. What would be present in a genuine active-skill run that would be absent in a drifted run? What is the earliest point in the inspect step where you would catch the failure?
-   *Tests adversarial reasoning about skill drift as a realistic failure mode.*
+6. *(Analyze, moderate)* Describe how you would detect that an active recipe has drifted — stopped calling its script without announcing it. What would be present in a genuine active-recipe run that would be absent in a drifted run? What is the earliest point in the inspect step where you would catch the failure?
+   *Tests adversarial reasoning about recipe drift as a realistic failure mode.*
 
 **Synthesis**
 
 7. *(Synthesize, harder)* The chapter argues that the run-inspect-record loop's safety comes from the inspect step, not from the automation. Construct a scenario in which the loop runs correctly — scripts called, audit present, log written — but produces a confidently wrong recommendation. Identify which component's input was bad, trace how the error propagated through the composite, and describe what the run log would and would not tell you about the failure.
    *Tests whether you understand the loop as necessary but not sufficient for correct decisions.*
 
-8. *(Synthesize, harder)* The `skills/_shared.md` contract is supposed to make the runtime honest by construction. Describe two ways the contract could fail — not because it is written incorrectly, but because the runtime doesn't enforce it. For each failure, write the specific `RUN_LOG.md` entry that would expose the problem and the one you would see if you weren't inspecting carefully.
+8. *(Synthesize, harder)* The `recipes/_shared.md` contract is supposed to make the runtime honest by construction. Describe two ways the contract could fail — not because it is written incorrectly, but because the runtime doesn't enforce it. For each failure, write the specific `RUN_LOG.md` entry that would expose the problem and the one you would see if you weren't inspecting carefully.
    *Tests whether you can reason about contract enforcement as a behavioral property, not just a textual property.*
 
 **Challenge**
 
-9. *(Evaluate, open-ended)* Design a lightweight audit protocol — taking no more than two minutes per run — that would reliably catch the three most likely failure modes of the run-inspect-record loop: skill drift, stale cache data, and a mislabeled model judgment treated as a record. For each failure mode, specify the exact check, the observable signal that indicates failure, and the corrective action. Then identify which of the three is hardest to catch and explain why.
+9. *(Evaluate, open-ended)* Design a lightweight audit protocol — taking no more than two minutes per run — that would reliably catch the three most likely failure modes of the run-inspect-record loop: recipe drift, stale cache data, and a mislabeled model judgment treated as a record. For each failure mode, specify the exact check, the observable signal that indicates failure, and the corrective action. Then identify which of the three is hardest to catch and explain why.
    *Tests whether you can reason about the loop's failure surface as an engineering problem with practical constraints.*
 
 ---
@@ -576,7 +576,7 @@
    *Tests the plausibility-auditing discipline as a behavioral practice, not a one-time check.*
 
 6. *(Analyze, moderate)* Run `npm run ats:scan` and `npm run ats:liveness` on at least five real companies. Record the output with full provenance for each role (ATS detected, liveness classification, source of each signal). Identify one role where the liveness classification surprised you and explain what additional check resolved the ambiguity.
-   *Tests the active-skill inspection habit from Chapter 14, applied at the first real run.*
+   *Tests the active-recipe inspection habit from Chapter 14, applied at the first real run.*
 
 **Synthesis**
 
@@ -597,7 +597,7 @@
 
 ---
 
-## Chapter 97: Appendix — Fundamental Themes
+## Chapter 97: The Fundamental Themes
 *Source: `chapters/97-fundamental-themes.md`*
 
 > **Section not yet authored.** No `## Exercises` block found in this chapter file.
@@ -605,7 +605,15 @@
 
 ---
 
-## Chapter 99: 99 Back Matter
+## Chapter 98: Appendix: Best Practices for Running the Reallocation Engine
+*Source: `chapters/98-appendix-best-practices.md`*
+
+> **Section not yet authored.** No `## Exercises` block found in this chapter file.
+> To add this section, edit the source chapter file directly.
+
+---
+
+## Chapter 99: (untitled)
 *Source: `chapters/99-back-matter.md`*
 
 > **Section not yet authored.** No `## Exercises` block found in this chapter file.

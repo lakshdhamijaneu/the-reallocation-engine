@@ -46,7 +46,7 @@
 
 ---
 
-## Chapter 04: Chapter 4 — Two Customers: Writing a Skill for the AI and the Human
+## Chapter 04: Chapter 4 — Two Customers: Writing a Recipe for the AI and the Human
 *Source: `chapters/04-two-customers.md`*
 
 > **Section not yet authored.** No `## CLI Quick Reference` block found in this chapter file.
@@ -126,7 +126,7 @@
 
 ---
 
-## Chapter 14: Chapter 14 — Skills: Operating the Engine
+## Chapter 14: Chapter 14 — Recipes: Operating the Engine
 *Source: `chapters/14-skills-operating-the-engine.md`*
 
 > **Section not yet authored.** No `## CLI Quick Reference` block found in this chapter file.
