@@ -6,6 +6,8 @@
 
 # The Reallocation Engine
 
+*Verified Data, Phase Gates, and CLI Pipelines for the F-1 OPT Search*
+
 **Nik Bear Brown · Humanitarians AI**
 
 ---

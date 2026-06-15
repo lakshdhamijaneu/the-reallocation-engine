@@ -1,6 +1,6 @@
 # The Reallocation Engine
 
-*An F-1/OPT job-search engine — using AI without surrendering the judgment the search depends on.*
+*Verified Data, Phase Gates, and CLI Pipelines for the F-1 OPT Search*
 
 **Nik Bear Brown** and **Humanitarians AI** · Published by Humanitarians AI · First edition, 2026
 
