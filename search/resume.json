@@ -1,0 +1,119 @@
+{
+  "attestation": {
+    "attested": true,
+    "attested_date": "2026-06-25",
+    "attestation_note": "Three errors corrected on review: (1) Radius role was imported as full-time 'Software Engineer' — it is a co-op; title and employment_type fixed. (2) Cost-savings metrics were overstated in scope — '$7.2M annually' and '66% company-wide' reframed as internal estimates scoped to the actual workload/team, not sole company-wide attribution. (3) Removed Kafka, Spark, Airflow, and Jenkins from skills — added aspirationally and not backed by hands-on production experience in any role."
+  },
+  "identity": {
+    "name": "Laksh Dhamija",
+    "location": "Boston, MA",
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/laksh-dhamija/"
+    },
+    "_note": "Phone and email intentionally omitted — this file is committed to a public fork and the engine does not score on contact info."
+  },
+  "education": [
+    {
+      "id": "edu-neu",
+      "institution": "Northeastern University",
+      "location": "Boston, MA, USA",
+      "degree": "Master of Science",
+      "field": "Computer Software Engineering",
+      "gpa": "4.0",
+      "start": "2025-01",
+      "end": "2026-08",
+      "status": "in_progress",
+      "stem_designated": true
+    },
+    {
+      "id": "edu-ggsipu",
+      "institution": "Guru Gobind Singh Indraprastha University (GGSIPU)",
+      "location": "New Delhi, India",
+      "degree": "Bachelor of Technology",
+      "field": "Electronics and Communication Engineering",
+      "start": "2016-08",
+      "end": "2020-10",
+      "status": "completed"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-radius",
+      "company": "Radius Technology Systems",
+      "location": "Boston, MA",
+      "title": "Software Engineer, Co-op",
+      "employment_type": "co-op",
+      "start": "2026-01",
+      "end": "2026-05",
+      "highlights": [
+        "Built the observability stack from the ground up (OpenTelemetry, Grafana dashboards, alerting rules, incident.io lifecycle workflows); reduced mean time to detection to under 2 minutes.",
+        "Built Terraform CI/CD pipelines (plan-on-PR, apply-on-merge) in GitHub Actions with dedicated GCP service accounts and cross-project IAM bindings.",
+        "Implemented least-privilege IAM/RBAC via reusable Terraform modules (org policies, custom roles, Google Groups, folder hierarchy, audit log sinks, PAM entitlements).",
+        "Automated chaos engineering on Kubernetes (Chaos Mesh, Argo Workflows, Kargo), gating environment promotions on Prometheus-verified experiments.",
+        "Designed an E2E testing framework in GitHub Actions with automated upgrade tests and path-based CI triggers."
+      ]
+    },
+    {
+      "id": "exp-highlevel-lead",
+      "company": "HighLevel",
+      "location": "Dallas, TX (Remote)",
+      "title": "Lead Engineer",
+      "start": "2024-06",
+      "end": "2024-12",
+      "highlights": [
+        "Engineered a config-driven Workflows platform on GCP Pub/Sub processing 500K+ DB change events/sec (backpressure, fault isolation, ordering keys, at-least-once delivery, retries, dead-letter queues).",
+        "Optimized autoscaling and right-sized compute across the team's distributed infrastructure; estimated ~$7.2M annualized savings (internal estimate; team initiative, not sole attribution).",
+        "Designed a data archival architecture that cut infrastructure cost on the analytical/storage workload by ~66% (workload-scoped estimate, not company-wide)."
+      ]
+    },
+    {
+      "id": "exp-highlevel-sde3",
+      "company": "HighLevel",
+      "location": "Dallas, TX (Remote)",
+      "title": "Software Development Engineer III",
+      "start": "2023-09",
+      "end": "2024-06",
+      "highlights": [
+        "Built a real-time monitoring framework surfacing idle/over-provisioned resources across large-scale distributed systems; estimated ~$800K/year cloud-spend reduction (internal estimate).",
+        "Led stress and scale testing with a team of 4; caught ~75% of issues pre-release with zero production escalations.",
+        "Owned tier-2 on-call rotation: incident triage, distributed-system debugging, root-cause analysis."
+      ]
+    },
+    {
+      "id": "exp-admitkard",
+      "company": "AdmitKard",
+      "location": "New Delhi, India",
+      "title": "Software Development Engineer II / I",
+      "start": "2020-10",
+      "end": "2023-08",
+      "highlights": [
+        "Scaled an event-driven distributed platform through a 100x traffic surge (p99 8s → 200ms, capacity +250%, failover 10s → 0.5s); awarded Techie of the Year.",
+        "Built a rule engine in Python and Java with an event-driven REST API surface; reduced manual workflow turnaround ~85%.",
+        "Built an internal sales-analytics platform 0-to-1 (AWS SNS/SQS event pipeline, ~50k events/hour; React dashboards) that became the GTM team's source of truth and helped secure the seed round."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-billease",
+      "name": "BillEase",
+      "context": "MIT Sandbox Innovation Fund — Cambridge, MA",
+      "role": "Founding Engineer (side project)",
+      "domain": "FinTech",
+      "start": "2025-09",
+      "end": "2026-01",
+      "highlights": [
+        "Building a FinTech platform to centralize credit-card payments and maximize user rewards.",
+        "Driving prototype development and customer research with MIT Sloan mentors (Lean Launchpad)."
+      ]
+    }
+  ],
+  "skills": {
+    "languages_frameworks": ["Python", "Java", "Go", "TypeScript/JavaScript", "Node.js", "React", "Next.js", "Express", "Bash/Shell", "SQL"],
+    "reliability_sre": ["OpenTelemetry", "Grafana", "Prometheus", "distributed tracing", "incident.io", "on-call", "SLO-driven alerting", "chaos engineering (Chaos Mesh)", "capacity planning", "canary/rollback"],
+    "cloud_containers_iac": ["AWS", "GCP", "Kubernetes", "Docker", "Argo Workflows", "Kargo", "Terraform", "GitHub Actions", "GitOps", "IAM/RBAC", "audit log sinks", "PAM"],
+    "distributed_systems_data": ["GCP Pub/Sub", "backpressure", "ordering keys", "at-least-once delivery", "DLQ", "PostgreSQL", "MongoDB", "Redis", "sharding", "Linux", "TCP/IP", "load balancing"]
+  },
+  "certifications": [],
+  "publications": []
+}

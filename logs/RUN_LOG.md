@@ -150,3 +150,20 @@ private emails, or sensitive application notes.
 - **Rebuilt:** `node scripts/build-instructions.mjs --promote` → `AGENTS.md` + `CLAUDE.md` regenerated; `CLAUDE.md` now imports `@SNICKERDOODLE.md`.
 - **Untouched:** `data/` CSVs (real company names containing "mycroft") and prior RUN_LOG history (append-only).
 - **Result:** conformance + doctor green; no stale `MYCROFT.md` outside data/history.
+
+## 2026-06-25 — search/ personal layer (Setup Exercise)
+
+- **Built:** `search/resume.json`, `search/profile.yml`, `search/gaps.md`; gitignored `search/private-notes.md` (confirmed via `git check-ignore`).
+- **Three attestation errors caught in resume.json:**
+  1. Radius role imported as full-time "Software Engineer" — it is a **co-op** (title + `employment_type` fixed).
+  2. Cost metrics overstated in scope — "$7.2M annually" and "66% company-wide" reframed as internal estimates scoped to the actual workload/team, not sole company-wide attribution.
+  3. Kafka, Spark, Airflow, Jenkins listed as skills without hands-on production backing — **removed**.
+- **Top gap (gaps.md):** Apache Kafka / event-streaming — O*NET 15-1252 hot technology + recurring backend-JD requirement; I have GCP Pub/Sub, not Kafka. Plan: ship + open-source a small Kafka component with a public URL → new resume entry.
+- **Killed row + why:** "Needs a formal CS degree" — wrong; the agent pattern-matched my undergrad (B.Tech Electronics) and missed my **MS in Computer Software Engineering (Northeastern, 4.0)**, which satisfies "CS or related field." Domain knowledge the agent lacked.
+- **profile.yml field corrected from the agent's first draft:** geography — the draft limited me to "Boston + remote"; corrected to include relocation to SF Bay Area / NYC / Seattle (real flexibility I have; widens the sponsor pool).
+- **Verification check (Step 4):**
+  - *resume.json traceable / no promoted title?* — Caught & fixed a promoted employment type (co-op → full-time), overstated dollar metrics, and 4 unbacked skills; remaining entries are defensible in an interview.
+  - *profile.yml visa reflects actual documents?* — Yes: F-1 in-program, pre-OPT, 0 unemployment days, OPT EAD not yet issued (`authorization_end_date: null`). `stem_eligible: true` is **DSO-confirmed**, not an assumption.
+  - *gaps.md evidence real (not agent-invented)?* — Yes: Kafka grounded in O*NET 15-1252 + JD pattern; public-evidence and US-tenure grounded in recurring posting language. The one agent-invented demand signal (CS-degree requirement) was killed.
+- **Privacy:** no `search/private-notes.md` contents in this log or committed to git.
+- **Tooling check:** the engine's upstream `.gitignore` globally ignores `resume.json` (line 69) — caught that this would silently drop the attested record from the commit; added `!search/resume.json` so the core deliverable is actually tracked. (Skepticism applied to the tooling, not just the data.)

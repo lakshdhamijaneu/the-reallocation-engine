@@ -1,0 +1,36 @@
+# search/profile.yml — target role, constraints, and search preferences
+# Agent-drafted from intake. Fields marked "# CONFIRM" are my inference — correct any that
+# drift from your actual constraints toward what merely sounds good.
+
+target_role:
+  one_liner: "Backend / platform (infrastructure & reliability) software engineer at a product company with H-1B sponsorship history"
+  soc_hint: "15-1252  # Software Developers (used by the engine's BLS/role-quality layer)"
+  seniority: "Software Engineer II/III — ~4 yrs full-time + co-op; not targeting new-grad-only or staff/principal"
+  focus_areas: ["distributed systems", "platform / infrastructure", "observability & SRE", "backend services"]
+
+visa_and_timeline:
+  visa_type: "F-1"
+  status: "in_program (pre-OPT)"          # graduate Aug 2026
+  opt_filed: false
+  expected_opt_start: "2026-09"           # ~post-graduation
+  authorization_end_date: null            # OPT EAD not yet issued
+  unemployment_days_used: 0
+  unemployment_ceiling_days: 90
+  buffer_target_days: 80                  # book rec: act before the 90-day ceiling
+  stem_eligible: true                     # CONFIRMED with DSO (24-month STEM extension available)
+  sponsorship_required: true             # see sponsorship gate below
+
+geography:
+  primary: ["Boston, MA"]
+  will_relocate_to: ["SF Bay Area, CA", "New York, NY", "Seattle, WA"]   # major H-1B sponsor hubs
+  open_to: ["Remote (US)"]
+  hard_constraints: "none"
+
+industry_and_company:
+  sectors: "open — no sector preference and no hard exclusions; rank purely on sponsorship + fit + funding recency"
+  company_size: "no hard preference — Series A–C, late-stage/pre-IPO, and public are all in scope"
+  hard_exclusions: []
+
+sponsorship:
+  required: true
+  gate: "A company with no H-1B sponsorship history is Skip-regardless, regardless of fit."
